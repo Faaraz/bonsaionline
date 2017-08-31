@@ -156,11 +156,10 @@ if($_SERVER["REMOTE_ADDR"] = '127.0.0.01')
 
 </body>
 </html>
-?>
 <?php
 } else {
     ?>
-     <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <title>Bootstrap Example</title>
