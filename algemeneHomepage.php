@@ -4,7 +4,7 @@ $ip = gethostbyname($host);
 
 echo $ip;
 
-if($_SERVER["REMOTE_ADDR"] = '127.0.0.01')
+if($_SERVER["REMOTE_ADDR"] == "127.0.0.01")
 {
     ?>
     <!DOCTYPE html>
