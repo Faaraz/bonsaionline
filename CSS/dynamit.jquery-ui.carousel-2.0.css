@@ -1,0 +1,116 @@
+.carousel{
+    width:          100%;   /* this is important to customize */
+    height:         auto;   /* this is important to customize */
+    overflow:       hidden !important;
+    position:       relative !important;
+    /* enforce hardware acceleration */
+    -webkit-transform:  translate3d(0, 0, 0);
+    transform:          translate3d(0, 0, 0);
+    -moz-transform:     translate3d(0, 0, 0);
+    -o-transform:       translate3d(0, 0, 0);
+}
+ul.slides-list{
+    height:     100% !important;
+    width:      auto;
+    margin:     0;
+    padding:    0;
+    display:    block !important;
+    float:      left !important;
+}
+
+
+/* css for the slides */
+ul.slides-list li{
+    margin:         0;
+    padding:        0;
+    display:        block !important;
+    float:          left;
+    clear:          none;
+    list-style:     none !important;
+    text-align:     center;
+    overflow:       hidden !important;
+    background:     #fff;
+}
+/* this class is added by the carousel if the slides need to be positioned over each other rather than next to each other */
+ul.slides-list.stacked-slides li{
+    left:       0;
+    top:        0;
+    position:   absolute !important;
+    opacity:    0;
+    z-index:    0;
+}
+ul.slides-list.stacked-slides li:first-child{
+    opacity:    1;
+}
+
+.carousel img.slide-image{
+    float:  none;
+    margin: auto;
+}
+
+.carousel .blind{
+    position:   absolute !important;
+    z-index:    1;
+    background: #fff;
+}
+
+.splash-screen{
+    width:      100%;
+    height:     100%;
+    position:   absolute;
+    z-index:    7;
+    background: #fff;
+}
+
+/* navigation */
+.nav-button{
+    position:   absolute !important;
+    z-index:    6;
+    cursor:     pointer;
+}
+.tab-nav{
+    position:   absolute;
+    z-index:    6;
+}
+.tab-nav li,
+.tab-nav-item{
+    cursor: pointer;
+}
+.carousel.disabled .nav-button,
+.carousel.disabled .tab-nav{
+    display:    none !important;
+}
+
+
+
+/* example css for customization.  Do not customize here, paste in different stylesheet */
+
+
+.carousel{
+    /*
+    width:  auto;
+    height: auto;
+    */
+}
+/* the active slide */
+.current-slide{
+}
+/* prev/next buttons (You add these yourself, it's optional) */
+.nav-button{
+}
+/* tab-navigation-element (You add tab-navigation yourself, it's optional) */
+.tab-nav{
+}
+/* active tab in tab-navigation (You add tab-navigation yourself, it's optional) */
+.tab-nav.active{
+}
+/* the carousel is disabled if there's less than 2 slides in it */
+.carousel.disabled .nav-button,
+.carousel.disabled .tab-nav{
+}
+/* the element where the carousel will place the description-html/text for the active/current slide (You add this element yourself, it's optional) */
+.carousel .description{
+}
+/* the element where the carousel will place the title for the active/current slide (You add this element yourself, it's optional) */
+.carousel .title{
+}

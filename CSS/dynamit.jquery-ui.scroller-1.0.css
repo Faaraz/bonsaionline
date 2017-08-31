@@ -1,0 +1,219 @@
+.scroller{
+    position:           relative;
+    overflow:           hidden !important;
+    /*activate the GPU for compositing each page */
+    -webkit-transform:  translate3d(0, 0, 0);
+    transform:          translate3d(0, 0, 0);
+    -moz-transform:     translate3d(0, 0, 0);
+    -o-transform:       translate3d(0, 0, 0);
+}
+.scroll-content-wrapper{
+    width:          100%;
+    height:         100%;
+    overflow:       hidden !important;
+    position:       relative;
+}
+.scroll-content{
+    float:      left;
+}
+.scrolling{
+    user-select:            none;
+    -ms-user-select:        none;
+    -moz-user-select:       none;
+    -webkit-user-select:    none;
+}
+/*.scroller.xoverflow{
+    padding-bottom: 10px;
+}
+.scroller.yoverflow{
+    padding-right: 10px;
+}*/
+
+.scroll-item{
+    /*    float:  left;*/
+    display:        table-cell !important;
+    vertical-align: top;
+}
+
+.scrollbar{
+    position:   absolute;
+    display:    block;
+    background: #efedee;
+}
+.scroll-button{
+    border-radius:  5px;
+}
+.scrollbar-horizontal{
+    width:          100%;
+    height:         10px;
+    bottom:         0;
+}
+.scrollbar-horizontal .scroll-button{
+    width:          20px;
+    height:         100%;
+}
+.scrollbar-vertical{
+    height:         100%;
+    width:          10px;
+    right:          0;
+    top:            0;
+}
+.scroller.scrollbar-x-none .scrollbar-horizontal,
+.scroller.scrollbar-y-none .scrollbar-vertical{
+    display:     none !important;
+}
+.scrollbar-vertical .scroll-button{
+    width:      100%;
+}
+.scroll-button{
+    background:     #888;
+    cursor:         pointer;
+}
+
+.scroll-track{
+    float:      left;
+    position:   relative;
+    border-radius: 5px;
+
+    -moz-box-shadow:    inset 0 0 5px #888;
+    -webkit-box-shadow: inset 0 0 5px #888;
+    box-shadow:         inset 0 0 5px #888;
+}
+.scrollbar-horizontal .scroll-track{
+    height: 100%;
+}
+.scrollbar-vertical .scroll-track{
+    width: 100%;
+}
+
+.scroll-nav-button{
+    float:      left;
+    cursor:     pointer;
+    background: #888;
+    border-radius:              5px;
+}
+.scroll-nav-button-first{
+    float:      left;
+}
+.scroll-nav-button-second{
+    float:      right;
+}
+.scrollbar-vertical .scroll-nav-button{
+    width:      100%;
+    height:     20px;
+}
+.scrollbar-horizontal .scroll-nav-button{
+    width:                      20px;
+    height:                     100%;
+}
+.scroll-nav-button-none .scroll-nav-button{
+    display:        none;
+}
+.scroll-nav-button-never .scroll-nav-button{
+    display:        none !important;
+}
+/*.scrollbar-horizontal .scroll-nav-button-first{
+    border-bottom-left-radius:  5px;
+    border-top-left-radius:     5px;
+}
+.scrollbar-horizontal .scroll-nav-button-second{
+    border-bottom-right-radius:  5px;
+    border-top-right-radius:     5px;
+}*/
+.scrollbar-vertical .scroll-nav-button-second{
+    /*    background:     url('../img/scrollpane/osx_arrow_down.png') no-repeat 0 -5px;*/
+}
+
+
+
+/**
+ *
+ * Horizontal Scrollbar
+ *
+ */
+.myScrollbarH {
+    position:absolute;
+    z-index:100;
+    height:8px;
+    bottom:1px;
+    left:2px;
+    right:7px;
+    background: #efedee;
+}
+
+.myScrollbarH > div {
+    position:absolute;
+    z-index:100;
+    height:100%;
+
+    /* The following is probably what you want to customize */
+    background-image:-webkit-gradient(linear, 0 0, 100% 0, from(#a00), to(#f00));
+    background-image:-moz-linear-gradient(top, #f00, #900);
+    background-image:-o-linear-gradient(top, #f00, #900);
+
+    border:1px solid #900;
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding-box;
+    -o-background-clip:padding-box;
+    background-clip:padding-box;
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -o-border-radius:4px;
+    border-radius:4px;
+
+    -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    -moz-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    -o-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+}
+
+
+/**
+ *
+ * Vertical Scrollbar
+ *
+ */
+.myScrollbarV {
+    position:absolute;
+    z-index:100;
+    width:8px;bottom:7px;top:2px;right:1px
+}
+
+.myScrollbarV > div {
+    position:absolute;
+    z-index:100;
+    width:100%;
+
+    /* The following is probably what you want to customize */
+    background:-webkit-gradient(linear, 0 0, 100% 0, from(#f00), to(#900));
+    background-image:-moz-linear-gradient(top, #f00, #900);
+    background-image:-o-linear-gradient(top, #f00, #900);
+
+    border:1px solid #900;
+
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding-box;
+    -o-background-clip:padding-box;
+    background-clip:padding-box;
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -o-border-radius:4px;
+    border-radius:4px;
+
+    -webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    -moz-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    -o-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+    box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+}

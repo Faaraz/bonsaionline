@@ -1,0 +1,18 @@
+
+button, .button{
+    display:none;
+}
+
+.cart-view-table-front, .cart-view-table-back {
+    display:none;
+}
+.cart-view-table-front table th, .cart-view-table-back table th{
+    display:none;
+}
+
+.cart-view-table-front table tbody tr.even, .cart-view-table-back table tbody tr.even{
+    background-color: #2E5785;
+}
+.cart-view-table-front table tbody tr.odd, .cart-view-table-back table tbody tr.odd{
+    background-color: #2E5785;
+}

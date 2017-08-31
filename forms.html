@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulieren</title>
+	</head>
+	<body>
+		<h3>Voorbeeldpagina Formulier</h3>
+		
+		<!-- Met het action attribuut geef je aan waar de in het formulier ingevulde gegevens naartoe gaan. (naar welke pagina). Met het attribuut method geef je aan of de ingevulde gegevens zichtbaar zijn of niet. -->
+		
+		<form action="verwerkenformulier.php" method="post">
+			voornaam: <input type="text"
+							 maxlength="20"
+							 size="20"
+							 placeholder="voornaam"
+							 name="voornaam" /><br>
+							
+			achternaam: <input type="text" 
+							   maxlength="20"
+							   size="20"
+							   placeholder="achternaam"
+							   name="achternaam"/><br>
+			password:	<input type="password" name="password" /><br>
+			
+			man:		<input type="radio" name="geslacht" value="man"/><br>
+			vrouw:		<input type="radio" name="geslacht" value="vrouw"/><br>
+			
+			favoriet fruit: <select name="fruit">
+								<option value="banaan">banaan</option>
+								<option value="sinaasappel">sinaasappel</option>
+								<option value="manderijn">manderijn</option>
+								<option value="appel">appel</option>
+								<option value="kiwi">kiwi</option>			
+							</select><br>
+							
+			Wat is uw klacht: <textarea name="klacht" cols="20" rows="10"></textarea><br>
+			
+			Kies uw haarkleur: <br>
+			<input type="checkbox" name="haarkleur[]" value="blond" />blond haar<br>
+			<input type="checkbox" name="haarkleur[]" value="donker" />donker haar<br>
+			<input type="checkbox" name="haarkleur[]" value="grijs" />grijs haar<br>
+			
+			Vul uw leeftijd in:<br>
+			<input type="number" name="leeftijd" min="0" max="120" /><br>
+			
+			Geef uw geboortedatum:<br>
+			<input type="date" name="geboortedatum" min="1960-01-01" max="1968-01-01" /><br>
+			
+			Geef uw favoriete kleur:<br>
+			<input type="color" name="favo_kleur" /><br>
+			
+			Geeft een cijfer tussen de 1 en 10:<br>
+			<input type="range" name="cijfer" min="1" max="10" /><br>
+			
+			Selecteer een weeknummer:<br>
+			<input type="week" name="weeknr" /><br>
+			
+			emailadres:<br>
+			<input type="email" name="emailadres"/><br>
+			
+			url van uw website:<br>
+			<input type="url" name="url_website" /><br>
+			
+			
+ 			<input type="submit" value="verstuur" />
+		</form>
+	</body>
+</html>

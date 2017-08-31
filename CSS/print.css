@@ -1,0 +1,29 @@
+/*******************************************
+	PARADISO print styles
+	www.paradiso.nl
+
+	author: KRUIT communication-design
+	www.kruit.nl
+
+	last editted: 6-06-2013 / GVZ
+********************************************/
+
+body {
+    color: #000000;
+    font-size: 13px;
+    width: 100%;
+    line-height: 150%;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
