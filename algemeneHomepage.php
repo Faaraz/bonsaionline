@@ -1,4 +1,9 @@
 <?php
+$host= gethostname();
+$ip = gethostbyname($host);
+
+echo $ip;
+
 if($_SERVER["REMOTE_ADDR"] = '127.0.0.01')
 {
     ?>
