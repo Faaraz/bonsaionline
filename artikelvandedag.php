@@ -4,7 +4,9 @@ require_once("./security.php");
 
 
 error_reporting(E_ALL ^ E_WARNING); 
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -199,17 +201,3 @@ if (isset($_POST["search_type"]) && !empty($_POST["search_type"])) {
 
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>

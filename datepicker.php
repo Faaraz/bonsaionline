@@ -40,10 +40,11 @@ $results = $query3->fetchColumn();
 //    $grand_total = '48.50';
 //}
 
-if(count($_SESSION['cart_products']) < 3){
-    $grand_total = '25.00';
-    print( "<h4>Let op! U heeft naast het artikel van de dag geen 2 producten geselecteerd, de korting op het artikel van de dag zal niet worden toegepast!</h4>");
-}
+
+//if(count($_SESSION['cart_products']) < 3){
+//    $grand_total = '25.00';
+//    print( "<h4>Let op! U heeft naast het artikel van de dag geen 2 producten geselecteerd, de korting op het artikel van de dag zal niet worden toegepast!</h4>");
+//}
 
 
 
